@@ -9,8 +9,8 @@
     <div class="top-box">
         {{ render(controller('AppBundle:Default:listTopKnowledges')) }}
         {{ render(controller('AppBundle:Default:listTopTopics')) }}
+        {{ render(controller('AppBundle:Default:listTopUsers')) }}
     </div>
-    {{ render(controller('AppBundle:Default:listTopUsers')) }}
 </aside>
 {% block javascripts %}
     <script src="{{ asset('bundles/app/js/toplist/toplist.js') }}"></script>
