@@ -115,6 +115,7 @@ class KnowledgeServiceImpl extends KernelAwareBaseService implements KnowledgeSe
         $this->getUserDao()->update($user['id'],array(
             'imageUrl' => $path
         ));
+        unlink(dirname($_SERVER['DOCUMENT_ROOT']).'/app/cache');
     }
 
     public function deleteKnowledge($id)

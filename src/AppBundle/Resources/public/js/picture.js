@@ -52,7 +52,7 @@ $(document).ready(function(){
             contentType: false,
             success:function(data){
                 modal.modal('hide');
-                $('li .user-image').attr('src',data.imageUrl);
+                $('#user-image').attr('src',data.imageUrl);
                 location.href = '/';  
             }
         });
