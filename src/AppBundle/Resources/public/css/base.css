@@ -5,3 +5,7 @@
 #likeMargin{
     margin-right: 30px; 
 }
+
+.modal-open{
+overflow: auto;
+}
